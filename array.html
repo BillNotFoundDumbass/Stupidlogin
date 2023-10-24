@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        // const tenhocsinh = ["Ngô Bất Hiếu", "Hoàng Phóc", "Đại Vẹt"];
+        // document.getElementById("demo").innerHTML = tenhocsinh[0];
+
+        // tenhocsinh[3] = 'Ballin'
+        // document.getElementById("demo").innerHTML = tenhocsinh[3];
+        // const data = [[1, 2, 3], [1, 3, 4], [4, 5, 6]];
+        // data.push('aaa');
+        // document.write(data[1][2]);
+
+        var number = 1;
+        for (var i = 1; i <= 10; i++) {
+            document.write(number + "<br/>");
+            number++
+            if (number == 5) {
+                break;
+            }
+        }
+
+    </script>
+
+<script>
+    for(var i = 1; i <= 10;i++){
+    if(i==2 || i==5 || i==9){
+        continue;
+    }
+    document.write(i + "<br>");
+}
+</script>
+</body>
+
+</html>

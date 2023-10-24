@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tui dốt toán :/</title>
+</head>
+
+<body>
+    <p>Tính chu vi - diện tích hình tròn:
+        <input type="number" id="bankinh">
+
+        <button onclick="hamxulycode()">TÍNH</button>
+    </p>
+
+    <p>Kết quả tính toán khi bán kính bằng 0 là: <span id="bankinhhienthi"></p>
+    <p>Chu vi hình tròn là: <span id="chuvihienthi"></span></p>
+    <p>Diện tích hình tròn là: <span id="dientichhienthi"></span></p>
+
+    <script>
+        function hamxulycode() {
+            //Lay gia tri cua the imput
+            let bankinh = document.getElementById("bankinh").value;
+            document.getElementById("bankinhhienthi").innerHTML = bankinh;
+            let chuvi = 2 * 3.14 * bankinh;
+            let dientich = 3.14 *  bankinh* bankinh;
+            document.getElementById("chuvihienthi").innerHTML = chuvi;
+            document.getElementById("dientichhienthi").innerHTML = dientich;
+            
+        }
+    </script>
+</body>
+
+</html>

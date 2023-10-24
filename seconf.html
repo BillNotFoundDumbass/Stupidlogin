@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Say anything</p>
+    <input type="text" id="cringe">
+    <button onclick="Socringe()">Say it</button>
+    <span id="stfu">...</span>
+
+    <script>
+        function Socringe() {
+            let tc = document.getElementById('cringe').value;
+
+            let tcdung1 = 'skibidi toilet'
+            let tcdung2 = 'sigma'
+            let tcdung3 = 'WE LIVE WE LOVE WE LIE'
+            //console.log (tc != tcdung1);
+
+            
+
+            while (tc == tcdung1 || tc == tcdung2 || tc == tcdung3) {
+                document.getElementById("stfu").innerHTML = 'YOU HAVE REACHED YOUR LIMIT ON TALKING.SHUT THE F@#$ UP';
+                document.getElementById("cringe").value = "";
+                document.getElementById("cringe").autofocus;
+                break;
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Chiều dài và chiều rộng:
+        <input type="number" id="dai">
+        <input type="number" id="rong">
+        <button onclick="hamxulycode()">TÍNH</button>
+
+        
+    </p>
+    <p>kết quả chiều dài khi bán kính bằng 0 là: <span id="chieudaihienthi"></p>
+      <p> Kết quả chiều rộng khi bán kính bằng 0 là: <span id="chieuronghienthi"></p>
+        <p>Chu vi hình chữ nhật là: <span id="chuvihienthi"></span></p>
+        <p>Diện tích hình chữ nhật  là: <span id="dientichhienthi"></span></p>
+
+        <script>
+            function hamxulycode() {
+                //Lay gia tri cua the imput
+                let dai = document.getElementById("dai").value;
+                let rong = document.getElementById("rong").value;
+                document.getElementById("chieudaihienthi").innerHTML = dai;
+                document.getElementById("chieuronghienthi").innerHTML = rong;
+                let chuvi = (dai + rong)*2;
+                let dientich = dai * rong;
+                document.getElementById("chuvihienthi").innerHTML = chuvi;
+                document.getElementById("dientichhienthi").innerHTML = dientich;
+                3
+            }
+        </script>
+    
+</body>
+</html>

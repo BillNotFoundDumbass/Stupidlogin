@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Choose ur number</p>
+    <input type="number" id="bruH">
+    <button onclick="NUMBERSHEET()">Count</button>
+    <p>one to <span id="NumShow">... </span> is: <span id="SHEET"></span></p>
+
+    <script>
+        function NUMBERSHEET() {
+            let N = document.getElementById('bruH').value;
+            document.getElementById('NumShow').innerHTML = N;
+            N = Number(N)
+            let total = 0;
+            for (let i = 1; i <= N; i++) {
+                total += i;
+            }
+            document.getElementById('SHEET').innerHTML = total;
+        }
+    </script>
+
+
+</body>
+
+</html>
